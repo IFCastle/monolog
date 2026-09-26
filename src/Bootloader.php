@@ -25,6 +25,9 @@ use Psr\Log\LoggerInterface;
  */
 final class Bootloader implements BootloaderInterface
 {
+    /**
+     * The main-config section this bootloader reads.
+     */
     public const string SECTION     = 'logger';
 
     private const string DEFAULT_LEVEL = 'info';
