@@ -8,6 +8,15 @@
         "ifcastle-installer": {
             "package": {
                 "name": "logger",
+                "mainConfig": {
+                    "logger": {
+                        "comment": "Monolog: the log file, relative to the application directory, and the lowest level written.",
+                        "config": {
+                            "file": "logs/app.log",
+                            "level": "info"
+                        }
+                    }
+                },
                 "bootloaders": [
                     "IfCastle\\Monolog\\Bootloader"
                 ]
